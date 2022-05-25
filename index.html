@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio | Evgeniya Vorobyeva</title>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header container" id="home">
+		<nav class="menu">
+			<img class="menu__logo" src="./img/logo.png" alt="Logo">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#skills">Навыки</a></li>
+				<li class="menu__item"><a href="#about">Обо мне</a></li>
+				<li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+				<li class="menu__item"><a href="#contacts">Контакты</a></li>
+			</ul>
+			<button class="menu__burger">
+				<span class="menu__burger-line"></span>
+			</button>
+		</nav>
+		<div class="header__content">
+			<div class="header__info">
+				<p class="header__text">Привет, это я!</p>
+				<h1 class="header__title">
+					HTML-Верстальщик<br>
+					Junior Frontend-разработчик
+				</h1>
+				<p class="header__name">Евгения Воробьева</p>
+				<a class="header__btn btn" href="#contacts">Связаться со мной</a>
+			</div>
+			<img class="header__photo" src="./img/Evgeniya.png" alt="My Photo">
+		</div>
+	</header>
+
+	<section class="skills" id="skills">
+		<div class="container">
+			<h2 class="skills__title title">Навыки</h2>
+			<ul class="skills__list">
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/html.svg" alt="HTML">
+					<p class="skills__name">HTML</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/css.svg" alt="CSS">
+					<p class="skills__name">CSS</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/js.svg" alt="JS">
+					<p class="skills__name">JavaScript</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/sass.svg" alt="SASS">
+					<p class="skills__name">SASS</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/gulp.svg" alt="Gulp">
+					<p class="skills__name">Gulp</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/jQuery.svg" alt="jQuery">
+					<p class="skills__name">jQuery</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/React.svg" alt="React">
+					<p class="skills__name">React</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/git.svg" alt="Git">
+					<p class="skills__name">Git</p>
+				</li>
+				<li class="skills__item">
+					<img class="skills__icon" src="./img/icons/figma.svg" alt="Figma">
+					<p class="skills__name">Figma</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<h2 class="about__title title">Обо мне</h2>
+			<div class="about__inner">
+				<div class="about__photo-left">
+					<img src="./img/photo1.jpg" alt="My photo">
+				</div>
+				<div class="about__info">
+					<p>
+						Приветствую Вас на своем сайте-портфолио. Меня зовут Евгения. С начала 2020г. занимаюсь HTML-версткой
+						сайтов. На протяжении этого времени постоянно развиваюсь в своей профессиональной области.
+					</p>
+					<p>
+						Немного о моей верстке:
+						<ul>
+							<li>- валидная - соответствует стандартам W3C</li>
+							<li>- кроссбраузерная - корректно отображается во всех браузерах</li>
+							<li>- адаптивная - корректно отображается на всех устройствах, от мобильных до 4к дисплеев</li>
+							<li>- PixelPerfect - полное соответсвие дизайн-макету</li>
+							<li>- использую методологию BEM - структурированный, чистый и понятный код</li>
+							<li>- оптимизированная - показатели PageSpeed Insights > 80%</li>
+						</ul>
+					</p>
+				</div>
+				<div class="about__photo-right">
+					<img src="./img/photo2.jpg" alt="My photo">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<h2 class="portfolio__title title">Портфолио</h2>
+			<div class="portfolio__cards">
+				<a href="https://evorobyevaa.github.io/space-tourism-site/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio1.JPG" alt="Cosmic">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">Cosmic tourism</h3>
+								<p class="card__desc">Landing page туров в космос</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://evorobyevaa.github.io/mavic2-pro-site/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio2.JPG" alt="Mavic">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">Mavic 2 Pro</h3>
+								<p class="card__desc">Landing page о квадракоптере Mavic 2 Pro</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://evorobyevaa.github.io/fitnes/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio3.JPG" alt="Good nutrition">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">Good nutrition</h3>
+								<p class="card__desc">Landing page о правильном питании</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://evorobyevaa.github.io/marvel-app/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio4.JPG" alt="Marvel">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">Marvel information portal</h3>
+								<p class="card__desc">Информационны портал для любителей Marvel</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://evorobyevaa.github.io/cappadocia-site/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio5.JPG" alt="Cappadocia">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">Cappadocia</h3>
+								<p class="card__desc">Landing page туров в Каппадокию</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://evorobyevaa.github.io/u-coda-site/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio6.JPG" alt="U-coda school">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">U-coda school</h3>
+								<p class="card__desc">Landing page онлайн школы U-coda</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://evorobyevaa.github.io/pro-spa/" target="_blank">
+					<div class="card">
+						<div class="card__front">
+							<img class="card__img" src="./img/portfolio7.JPG" alt="Pro Spa">
+						</div>
+						<div class="card__back">
+							<div class="card__content">
+								<h3 class="card__title">Pro Spa</h3>
+								<p class="card__desc">Страница каталога для сайта Pro Spa</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="contacts__title title">Контакты</h2>
+			<div class="contacts__inner">
+				<div class="contacts__form">
+					<form class="form" action="#">
+						<p class="contacts__form-text">
+							Если у вас есть какие-либо вопросы или вы просто хотите поздороваться, не стесняйтесь обращаться ко мне.
+							Вы можете заполнииь форму обратной связи или написать мне в одной из социалных сетей.
+						</p>
+						<div class="contacts__form-line">
+							<input class="contacts__form-input _req" name="name" placeholder="Ваше имя" type="text">
+							<input class="contacts__form-input _req _email" name="email" placeholder="Ваш email" type="email">
+						</div>
+						<textarea class="contacts__form-textarea _req" name="text" placeholder="Что вас интересует?"></textarea>
+						<button class="contacts__form-btn btn" type="submit">Отправить</button>
+					</form>
+				</div>
+				<ul class="contacts__social-list">
+					<li class="contacts__social-item">
+						<a class="contacts__social-link" href="tg://resolve?domain=e_vorobyevaa" target="_blank">
+							<img class="contacts__icon" src="./img/icons/telegram.svg" alt="Telegram">
+						</a>
+					</li>
+					<li class="contacts__social-item">
+						<a class="contacts__social-link" href="https://www.instagram.com/e_vorobyevaa" target="_blank">
+							<img class="contacts__icon" src="./img/icons/instagram.svg" alt="Instagram">
+						</a>
+					</li>
+					<li class="contacts__social-item">
+						<a class="contacts__social-link" href="https://vk.com/e_vorobyevaa" target="_blank">
+							<img class="contacts__icon" src="./img/icons/vk.svg" alt="Vk">
+						</a>
+					</li>
+					<li class="contacts__social-item">
+						<a class="contacts__social-link" href="https://github.com/evorobyevaa" target="_blank">
+							<img class="contacts__icon" src="./img/icons/github.svg" alt="Github">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__text">
+				© 2022 by Evgeniya Vorobyeva
+			</div>
+		</div>
+	</footer>
+
+	<div class="arrow-up">
+		<a href="#home"><img src="./img/icons/arrow-up.svg" alt="Arrow up"></a>
+	</div>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
