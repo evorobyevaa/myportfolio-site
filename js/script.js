@@ -13,21 +13,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (error === 0) {
       form.classList.add('_sending');
-      let response = await fetch('send.php', {
-        method: 'POST',
-        body: formData
-      });
-      if (response.ok) {
-        let result = await response.json();
-        alert(result.msg);
-        form.reset();
-        form.classList.remove('_sending');
-      } else {
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          alert('Спасибо за ваше обращение! Вернусь с обратной связью совсем скоро!');
+          form.reset();
+          form.classList.remove('_sending');
+        } else {
+          alert('Ошибка');
+          form.classList.remove('_sending');
+        }
+      }).catch(error => {
         alert('Ошибка');
-        form.classList.remove('_sending');
-      }
+      });
     } else {
-      console.log(error);
       alert('Заполните обятательные поля');
     }
   }
